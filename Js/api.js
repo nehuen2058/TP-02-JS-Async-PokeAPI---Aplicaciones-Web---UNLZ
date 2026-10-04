@@ -5,7 +5,7 @@ const urlBase = "https://pokeapi.co/api/v2";
 const pedirPokemon = async (pedido) => {
   
     const res = await fetch(`${urlBase}/${pedido}`);
-    if (!res.ok) throw new Error("Error en la red");
+    if (!res.ok) throw new Error("El Pokémon solicitado no existe");
     return await res.json();
 };
 
