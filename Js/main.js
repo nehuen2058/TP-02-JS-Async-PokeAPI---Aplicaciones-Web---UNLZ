@@ -1,6 +1,6 @@
-import { pedirPokemonPorNombre, pedirListaPokemon } from './api.js';
+import { pedirPokemonPorNombre, pedirListaPokemon } from './servicios/api.js';
 
-import { mostrarCards, mostrarSpinner } from './ui.js';
+import { mostrarCards, mostrarSpinner } from './ui/ui.js';
 
 const buscador = document.getElementById('buscador');
 const buscadorTexto = document.getElementById('buscadorTexto');
